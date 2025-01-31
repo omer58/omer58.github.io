@@ -1,8 +1,402 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Ömer Akgül</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+      padding: 20px;
+    }
+
+    .sparkle-text {
+      color: darkgoldenrod;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+    }
+
+    .sparkle-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(25deg, rgba(255, 255, 255, 0) 46.5%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 53.5%);
+      background-size: 300% 300%;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .sparkle-text:hover::before {
+      animation: sparkleSwipe 1s forwards;
+      opacity: 1;
+    }
+
+    @keyframes sparkleSwipe {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: 0 100%;
+      }
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
 <body>
 
-<h1>nothing to see here...</h1>
+  <div class="container" style="padding-top: 5%;">
+
+    <div id="main_content" class="row">
+
+      <div id="me" class="col-lg-3 col-12">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12 col-12">
+            <div class="row justify-content-center justify-content-top">
+
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-6 ">
+
+
+                <div class="col justify-content-center">
+                  <img src="Omer-new.jpg" class="rounded img-thumbnail mx-auto d-block" style="width: 80%;" alt="...">
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-12 col-md-8 col-sm-8 col-xs-12 col-12">
+
+            <div class="row justify-content-md-left justify-content-xs-center justify-content-sm-center">
+              <h1 style="text-align:center">Omer Akgul</h1>
+              <hr />
+
+            </div>
+
+            I'm a postdoctoral researcher at Carnegie Mellon University's <a href="https://www.cylab.cmu.edu/">CyLab</a>
+            with an appointment at <a href="https://s3d.cmu.edu/">S3D</a>. I'm supervised by <a
+              href="https://users.ece.cmu.edu/~lbauer/">Lujo Bauer</a>, <a href="https://lorrie.cranor.org/">Lorrie
+              Cranor</a>, and <a href="https://www.synergylabs.org/yuvraj/">Yuvraj Agarwal</a>. I work on human factors
+            in security & privacy problems, broadly defined.
+            <br>
+            Previously, under the guidance of <a href="https://users.umiacs.umd.edu/~mmazurek/">Michelle Mazurek</a>, I
+            earned my PhD in computer science at the University of Maryland, College Park. In addition to my current
+            roles, I hold a visiting research scientist position at UMD. My bachelor's is from Bilkent University where
+            I used to work on vision/machine learning.
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="pubs-etc" class="col-lg-9 col-12">
+
+        <br>
+        <h3>Publications
+
+          <a href="https://scholar.google.com/citations?hl=en&user=rPUNcYYAAAAJ&view_op=list_works&sortby=pubdate" ,
+            target="_blank">
+            <img style="width: 30px;" src="g_scholar.png"></img>
+          </a>
+        </h3>
+        <hr />
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">A Decade of Privacy-Relevant Android App Reviews: Large Scale Trends
+              <a href="https://arxiv.org/pdf/2403.02292.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"><b>Omer Akgul</b>, Sai Teja Peddinti, Nina Taft,
+              Michelle L. Mazurek, Hamza Harkous, Animesh Srivastava, Benoit Seguin
+            <p class="card-text" style="padding-left: 10px;"><b>[USENIX Security 24]</b> 33rd USENIX Security Symposium.
+              <i>To appear.</i>
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Bug Hunters’ Perspectives on the Challenges and Benefits of the Bug Bounty Ecosystem
+              <a href="papers/bug-bounties.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"><b>Omer Akgul</b>, Taha Eghtesad, Amit Elazari,
+              Omprakash Gnawali, Jens Grossklags, Michelle L. Mazurek, Daniel Votipka, Aron Laszka
+            <p class="card-text" style="padding-left: 10px;"><b>[USENIX Security 23]</b> <span>32nd USENIX Security
+                Symposium.</span>
+              <i class="sparkle-text">Distinguished paper award.</i>
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Is Cryptographic Deniability Sufficient? Non-Expert Perceptions of Deniability in
+              Secure Messaging
+
+              <a href="papers/deniability.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"> Nathan Reitinger, Nathan Malkin, <b>Omer
+                Akgul</b>, Michelle L. Mazurek, Ian Miers </p>
+            <p class="card-text" style="padding-left: 10px;"> <b>[IEEE S&P 23]</b> 44th IEEE Sumposium on Security and
+              Privacy.</p>
+
+          </div>
+        </div>
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">SoK: A Framework for Unifying At-Risk User Research
+
+              <a href="https://arxiv.org/pdf/2112.07047.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"> Noel Warford, Tara Matthews, Kaitlyn Yang,
+              <b>Omer Akgul</b>, Sunny Consolvo, Patrick Gage Kelley, Nathan Malkin, Michelle L. Mazurek, Manya Sleeper,
+              Kurt Thomas
+            </p>
+            <p class="card-text" style="padding-left: 10px;"> <b>[IEEE S&P 22]</b> 43rd IEEE Sumposium on Security and
+              Privacy.</p>
+
+          </div>
+        </div>
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Investigating Influencer VPN Ads on YouTube
+
+              <a href="papers/vpn-ads.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"> <b>Omer Akgul</b>, Richie Roberts, Moses Namara,
+              Dave Levin, Michelle L. Mazurek</p>
+            <p class="card-text" style="padding-left: 10px;"> <b>[IEEE S&P 22]</b> 43rd IEEE Sumposium on Security and
+              Privacy.</p>
+
+          </div>
+        </div>
+
+
+        <pdf-icon></pdf-icon>
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">From Secure to Military-Grade: Exploring the Effect of App Descriptions on User
+              Perceptions of Secure Messaging
+              <a href="papers/paranoia.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"> <b>Omer Akgul</b>, Ruba Abu-Salma, Wei Bai,
+              Elissa M Redmiles, Michelle L. Mazurek, Blase Ur</p>
+            <p class="card-text" style="padding-left: 10px;"> <b>[WPES 21]</b> 20th Workshop on Privacy in the
+              Electronic Society </p>
+
+          </div>
+        </div>
+
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Evaluating In-Workflow Messages for Improving Mental Models of End-to-End Encryption
+              <a href="papers/e2ee.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+            <p class="card-subtitle mb-1 " style="padding-left: 10px;"> <b>Omer Akgul</b>, Wei Bai, Shruti Das, Michelle
+              L Mazurek</p>
+            <p class="card-text" style="padding-left: 10px;"><b>[USENIX Security 21]</b> 30th USENIX Security Symposium
+            </p>
+
+          </div>
+        </div>
+
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Comparing Security and Privacy Attitudes Among US Users of Different Smartphone and
+              Smart-Speaker Platforms
+              <a href="papers/ios-v-android.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;">Desiree Abrokwa, Shruti Das, <b>Omer Akgul</b>,
+              Michelle L. Mazurek</p>
+            <p class="card-text" style="padding-left: 10px;"><b>[SOUPS 21]</b> 17th Symposium on Usable Privacy and
+              Security </p>
+
+          </div>
+        </div>
+
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">A Qualitative Investigation of Insecure Code Propagation from Online Forums
+              <a href="papers/so.pdf" , target="_blank">
+                <img src="pdf.svg"></img>
+              </a>
+            </h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;">Wei Bai, <b>Omer Akgul</b>, Michelle L. Mazurek
+            </p>
+            <p class="card-text" style="padding-left: 10px;"><b>[SecDev 19]</b> IEEE Secure Development Conference </p>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Applying deep learning in augmented reality tracking</h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"><b>Omer Akgul</b>, H Ibrahim Penekli, Yakup Genc
+            </p>
+            <p class="card-text" style="padding-left: 10px;"><b>[SITIS 16]</b> 12th International Conference on
+              Signal-Image Technology & Internet-Based Systems </p>
+
+          </div>
+        </div>
+
+
+
+        <br>
+        <h3>Workshops etc.</h3>
+        <hr />
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">This Proposal Was Brought to You by Content Creators’ Mental Models of Security &
+              Privacy Products</h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"> Richie Roberts, Wentao Guo, <b>Omer Akgul</b>,
+              Michelle L. Mazurek, Dave Levin</p>
+            <p class="card-text" style="padding-left: 10px;"><b>[ConPro 23]</b> 7th Workshop on Technology and Consumer
+              Protection</p>
+
+          </div>
+        </div>
+
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">Investigating VPN Ads on YouTube</h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"> <b>Omer Akgul</b>, Richie Roberts, Moses Namara,
+              Dave Levin, Michelle L Mazurek</p>
+            <p class="card-text" style="padding-left: 10px;"><b>[ConPro 21]</b> 5th Workshop on Technology and Consumer
+              Protection</p>
+
+          </div>
+        </div>
+
+
+
+        <div class="card border-light">
+          <div class="card-body">
+            <h5 class="card-title">The Hackers’ Viewpoint: Exploring Challenges and Benefits of Bug-Bounty Programs</h5>
+            <p class="card-subtitle mb-1" style="padding-left: 10px;"><b>Omer Akgul</b>, Taha Eghtesad, Amit Elazari,
+              Omprakash Gnawali, Jens Grossklags, Daniel Votipka, Aron Laszka</p>
+            <p class="card-text" style="padding-left: 10px;"><b>[WSIW 20]</b> 6th Workshop on Security Information
+              Workers</p>
+
+          </div>
+        </div>
+
+
+
+        <br>
+        <h3>Service</h3>
+        <hr />
+
+
+        <div class="card border-light">
+          <div class="card-body">
+
+            <p class="card-text" style="padding-left: 10px;"> Organizing: WSIW 23-24</p>
+            <p class="card-text" style="padding-left: 10px;"> Reviewing: IEEE S&P 24, (Po)PETS 23-24</p>
+
+          </div>
+        </div>
+
+        <br>
+        <h3>Contact</h3>
+        <hr />
+
+        <div class="card border-light">
+          <div class="card-body">
+
+            <p class="card-text" style="padding-left: 10px;">
+              <span>oa</span><span>kg</span><span>ul</span><span><span>@</span></span><span>andrew</span><span>.cmu.</span><span>e</span><span><span>du</span></span>
+            </p>
+            <p class="card-text" style="padding-left: 10px;"> Collaborative Innovation Center, 2213<br> Pittsburgh, PA
+            </p>
+
+          </div>
+        </div>
+
+
+        <hr/>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
 
 </body>
+
 </html>
